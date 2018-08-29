@@ -12,5 +12,10 @@
 </head>
 <body>
     <h1> Hello world 111 123<br> 캬캬캬</h1>
+<%
+    int a = 3;
+    int b = 4;
+    out.println("C = " + (a+b));
+%>
 </body>
 </html>

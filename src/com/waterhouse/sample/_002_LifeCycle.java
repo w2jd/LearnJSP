@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "LifeCycleEx",  urlPatterns = {"/lifecycle"})
-public class LifeCycleEx extends HttpServlet {
+public class _002_LifeCycleEx extends HttpServlet {
     /* Servlet Lifecycle ; Sequence
      * Servlet 생성 → @PostConstruct → Call init() → Call Service(), doGet(), doPost() → @PreDestroy → Call destroy()
      * */
 
-    public LifeCycleEx() {
+    public _002_LifeCycleEx() {
         super();
     }
 
@@ -30,7 +30,6 @@ public class LifeCycleEx extends HttpServlet {
     private void methodPostConstruct() {
         System.out.println("Status : PostConstruct");
     }
-
 
 
 

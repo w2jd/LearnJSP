@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 
 // Set servlet mapping
 @WebServlet(name = "HelloServlet", urlPatterns = {"/path1", "/path2"})
-public class HelloServlet extends HttpServlet {
+public class _001_HelloServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("doPost");

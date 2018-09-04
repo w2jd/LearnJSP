@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "LifeCycleEx",  urlPatterns = {"/lifecycle"})
+@WebServlet(name = "_002_LifeCycle",  urlPatterns = {"/lifecycle"})
 public class _002_LifeCycle extends HttpServlet {
     /* Servlet Lifecycle ; Sequence
      * Servlet 생성 → @PostConstruct → Call init() → Call Service(), doGet(), doPost() → @PreDestroy → Call destroy()

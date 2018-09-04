@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "LifeCycleEx",  urlPatterns = {"/lifecycle"})
-public class _002_LifeCycleEx extends HttpServlet {
+public class _002_LifeCycle extends HttpServlet {
     /* Servlet Lifecycle ; Sequence
      * Servlet 생성 → @PostConstruct → Call init() → Call Service(), doGet(), doPost() → @PreDestroy → Call destroy()
      * */
 
-    public _002_LifeCycleEx() {
+    public _002_LifeCycle() {
         super();
     }
 

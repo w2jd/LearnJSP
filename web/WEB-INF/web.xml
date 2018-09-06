@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <!-- Set servlet mapping -->
+    <!-- 001_HelloServlet - Set servlet mapping -->
     <!--<servlet>
         <servlet-name>HelloServlet2</servlet-name>
         <servlet-class>com.waterhouse.sample._001_HelloServlet</servlet-class>
@@ -14,6 +14,21 @@
         <url-pattern>/path3</url-pattern>
     </servlet-mapping>-->
 
+    <!-- 005_Context_init_Parameter - Common parameter ; access any servlet -->
+    <context-param>
+        <param-name>common_id</param-name>
+        <param-value>CommonServer</param-value>
+    </context-param>
+    <context-param>
+        <param-name>common_pw</param-name>
+        <param-value>ThisisSecret!@#!</param-value>
+    </context-param>
+    <context-param>
+        <param-name>common_path</param-name>
+        <param-value>/var/www/html</param-value>
+    </context-param>
+
+    <!-- 004_Init_Parameter - Dependence servlet ; Use only 1 Servlet -->
     <servlet>
         <servlet-name>InitParameter</servlet-name>
         <servlet-class>com.waterhouse.sample._004_Init_Parameter</servlet-class>
@@ -30,10 +45,15 @@
             <param-name>path</param-name>
             <param-value>/var/www/html/jsp</param-value>
         </init-param>
-
     </servlet>
     <servlet-mapping>
         <servlet-name>InitParameter</servlet-name>
         <url-pattern>/initp</url-pattern>
     </servlet-mapping>
+
+    <!--006_Servlet_Context_Listener - Set listener-->
+    <listener>
+        <listener-class>com.waterhouse.sample._006_Servlet_Context_Listener</listener-class>
+    </listener>
+
 </web-app>

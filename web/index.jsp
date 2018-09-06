@@ -11,6 +11,12 @@
     <title>$Title$</title>
   </head>
   <body>
-  Hello world
+  <h2>Hello JSP</h2><br/>
+
+  <a href="/path1">001_HelloServlet</a> <a href="/path2">001_HelloServlet</a><br/>
+  <a href="/lifecycle">002_LifeCycle</a><br/>
+  <a href="/003.form.html">003_HTML_Form_Tag</a><br/>
+  <a href="/initp">004_Init_Parameter</a><br/>
+
   </body>
 </html>

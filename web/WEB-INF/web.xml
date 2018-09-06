@@ -5,12 +5,35 @@
          version="4.0">
 
     <!-- Set servlet mapping -->
-    <servlet>
+    <!--<servlet>
         <servlet-name>HelloServlet2</servlet-name>
         <servlet-class>com.waterhouse.sample._001_HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet2</servlet-name>
         <url-pattern>/path3</url-pattern>
+    </servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>InitParameter</servlet-name>
+        <servlet-class>com.waterhouse.sample._004_Init_Parameter</servlet-class>
+
+        <init-param>
+            <param-name>id</param-name>
+            <param-value>UbuntuServer</param-value>
+        </init-param>
+        <init-param>
+            <param-name>pw</param-name>
+            <param-value>ServerPassword!@#$</param-value>
+        </init-param>
+        <init-param>
+            <param-name>path</param-name>
+            <param-value>/var/www/html/jsp</param-value>
+        </init-param>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitParameter</servlet-name>
+        <url-pattern>/initp</url-pattern>
     </servlet-mapping>
 </web-app>

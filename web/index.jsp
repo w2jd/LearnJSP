@@ -8,9 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Learn JSP</title>
   </head>
   <body>
-  Hello world
+  <h2>Hello JSP</h2><br/>
+
+  <a href="/path1">001_HelloServlet</a> <a href="/path2">001_HelloServlet</a><br/>
+  <a href="/lifecycle">002_LifeCycle</a><br/>
+  <a href="/003.form.html">003_HTML_Form_Tag</a><br/>
+  <a href="/initp">004_Init_Parameter</a><br/>
+  <a href="/005">005_Context_Init_Parameter</a><br/>
+  <a href="/006">006_Servlet_Context_listener</a><br/>
+
+
   </body>
 </html>
